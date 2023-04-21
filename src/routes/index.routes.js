@@ -19,13 +19,13 @@ router.put("/user/:id", updateUser);
 router.delete("/user/:id", deleteUser);
 
 
-router.get("/edit/:id", renderEdit);
+router.get("/user/:id/edit", renderEdit);
 
 
-router.post("/edit/:id", renderEditUpdate);
+router.post("/user/:id/edit", renderEditUpdate);
 
 
-router.get("/delete/:id", deleteUserId);
+router.get("/user/:id/delete", deleteUserId);
 
 
 export default router;
