@@ -1,32 +1,27 @@
 {
-  "name": "prueba-tecnica",
-  "version": "1.0.0",
-  "description": "prueba tecnica exprees mongo handlebars con dos entidades principales: usuarios con los tipos de usuarios y la entidad usuarios",
+  "name": "crud",
+  "version": "0.0.1",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js --exec babel-node"
+    "dev": "nodemon index.js --exec babel-node",
+    "start": "babel-node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "github.com/eliseodesign/prueba-tecnica-crud-exprees-mongo"
-  },
-  "keywords": [
-    "exprees",
-    "mongo"
-  ],
-  "author": "Eliseo Arévalo",
+  "keywords": [],
+  "author": "eliseodesign",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "express-handlebars": "^7.0.7",
-    "mongoose": "^7.0.4",
+    "express-handlebars": "^6.0.7",
+    "mongoose": "^6.9.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.4",
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
     "@babel/node": "^7.20.7",
-    "@babel/preset-env": "^7.21.4",
-    "nodemon": "^2.0.22"
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.20"
   }
 }
