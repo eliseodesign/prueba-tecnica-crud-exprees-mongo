@@ -1,8 +1,8 @@
 import {connect} from "mongoose"
-
+import {MONGO_URI} from '../config'
 (async ()=>{
   try{
-    const db = await connect("mongodb://127.0.0.1:27017/crud-mongo")
+    const db = await connect(MONGO_URI)
     console.log("DB connected to ", db.connection.name)
 
   }catch (e){
