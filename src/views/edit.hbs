@@ -1,0 +1,23 @@
+<form action="/edit" method="POST">
+
+  <h3>EDITAR USUARIO</h3>
+
+  <div>
+    <label for="nombre">Nombre</label>
+    <input value="{{user.nombre}}" name="nombre" id="nombre" type="text" placeholder="Ingresa tu nombre completo" />
+  </div>
+
+  <div>
+    <label for="correo">Correo electrónico</label>
+    <input value="{{user.correo}}" name="correo" id="correo" type="email" placeholder="Ingresa tu dirección de correo electrónico" required />
+  </div>
+
+  <div>
+    <label for="contraseña">Contraseña</label>
+    <input value="{{user.contrasenia}}" name="contraseña" id="contraseña" type="password" placeholder="Ingresa tu contraseña" />
+  </div>
+
+
+  <button>Add</button>
+</form>
+

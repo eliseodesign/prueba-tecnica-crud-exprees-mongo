@@ -10,17 +10,18 @@
   <tbody>
     {{#each users}}
     <tr> 
-      <td>{{@index}}</td>
+      <td>{{idUser}}</td>
       <td>{{nombre}}</td>
       <td>{{correo}}</td>
       <td>
-        <form action="/user/{{_id}}" method="GET">
+        {{!-- <form action="/user/{{idUser}}" method="GET">
           <button type="submit">Editar</button>
         </form>
-        <form action="/user/{{_id}}" method="POST">
+        <form action="/user/{{idUser}}" method="POST">
           <input type="hidden" name="_method" value="DELETE" />
           <button type="submit">Eliminar</button>
-        </form>
+        </form> --}}
+        <a href="/edit/{{_id}}">Editar</a>
       </td>
     </tr>
     {{/each}}
