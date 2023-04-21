@@ -62,11 +62,12 @@ router.get("/edit/:id", async (req, res) => {
 
 router.post("/edit/:id", async (req, res) => {
   try {
-    const users = await User.find().lean();
-    const user = await User.findById(req.params.id).lean()
+    const {id} = req.params;
+    await User.findByIdAndUpdate(id, req.body).lean()
+    console.log(req.params.body);
 
-    // await User.create({ idUser, ...req.body });
-    res.send("/e");
+
+    res.redirect("/")
   } catch (error) {
     console.error(error);
     res.status(500).send("Error al crear un nuevo usuario");
